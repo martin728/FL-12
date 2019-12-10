@@ -12,14 +12,14 @@
 
 .tm-banner-text {
     text-shadow: 4px 4px 3px #333;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-direction: normal;
     animation-name: slideleft;
 }
 
 @keyframes slideleft {
     from {
-        right: 300px;
+        right: 200px;
         width: 200%;
     }
     to {
@@ -73,6 +73,7 @@
 
 .text::after {
     content: 'New';
+    position: absolute;
     color: red;
     vertical-align: super;
     font-variant: small-caps;
@@ -190,7 +191,7 @@ section::before{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 175px;
+    padding-left: 150px;
     }
    .text::after{
        display: none;
