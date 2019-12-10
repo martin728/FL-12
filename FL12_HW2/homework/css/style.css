@@ -53,9 +53,9 @@
     color: lightskyblue;
 }
 .heading h2{
-       text-align: center;
-       color: lightskyblue;
-    }
+    text-align: center;
+    color: lightskyblue;
+}
 
 .tm-section-title{
     color: lightblue;
@@ -97,8 +97,6 @@
     text-indent: 25px;
 }
 
-
-
 .gallery-container p::first-letter {
     font-weight: 600;
 }
@@ -109,7 +107,6 @@
 
 .tm-section-description {
     line-height: 30px;
-    ;
 }
 
 .box-work {
@@ -188,10 +185,10 @@ section::before{
        padding-right: 175px;
    }
    .heading li:nth-child(even){
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 150px;
     }
    .text::after{
        display: none;
