@@ -1,0 +1,120 @@
+body {
+  background-color: #fff; }
+
+header {
+  min-height: 300px;
+  background-image: url(../img/m-h-day.jpg);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: 100% 100%;
+  border-bottom-right-radius: 49% 50%;
+  color: #000; }
+  header .header-wrap {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 960px;
+    margin: auto;
+    padding-bottom: 50px; }
+    header .header-wrap .landing-logo {
+      display: flex;
+      align-items: center; }
+    header .header-wrap p span {
+      display: block; }
+    header .header-wrap .header_heading {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      width: 49%;
+      font-size: 70px; }
+    header .header-wrap .header_text {
+      font-size: 20px;
+      white-space: pre-line;
+      padding-bottom: 50px; }
+  header .header_button {
+    color: #fff;
+    width: 165px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5%;
+    background-color: lightgreen; }
+  header .login {
+    padding-left: 175px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 200px;
+    color: #fff; }
+
+.section_text {
+  color: #000;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600; }
+.section_card_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  margin: auto;
+  padding-bottom: 50px; }
+  .section_card_wrap .section_card {
+    background-color: #2a2a2a;
+    display: flex;
+    margin: 15px;
+    padding: 10px; }
+    .section_card_wrap .section_card_right_container {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      width: 431px;
+      margin: auto; }
+      .section_card_wrap .section_card_right_container .section_card_heading, .section_card_wrap .section_card_right_container .section_link {
+        color: #fff;
+        text-align: center; }
+      .section_card_wrap .section_card_right_container .section_card_heading {
+        font-weight: 700;
+        font-size: 20px; }
+
+.section_banner {
+  position: relative;
+  color: #fff;
+  top: 40px;
+  display: flex;
+  background: linear-gradient(to right, #006800, #0101a8);
+  width: 900px;
+  margin: auto;
+  justify-content: space-between; }
+  .section_banner_text_wrap {
+    padding-left: 80px; }
+    .section_banner_text_wrap .section_banner_heading:nth-child(1) {
+      font-weight: 600; }
+  .section_banner_button {
+    align-self: center;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    margin-right: 80px;
+    border: none;
+    border-radius: 5%;
+    background: lightgreen; }
+
+.footer {
+  top: 10px;
+  background: #2a2a2a;
+  color: #fff; }
+  .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 70px;
+    width: 960px;
+    margin: auto; }
+    .footer-wrap_logo {
+      display: flex;
+      align-items: center; }
+    .footer-wrap p span {
+      display: block; }
+    .footer-wrap_text {
+      width: 300px; }
+    .footer-wrap .footer_text {
+      width: 315px; }
