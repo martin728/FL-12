@@ -1,5 +1,14 @@
 body {
-  background-color: #4e4f50; }
+  margin: 0;
+  background-color: #1a191f; }
+
+a {
+  color: #fff; }
+
+.error, .error--serious {
+  background-color: #fff; }
+  .error--serious {
+    border-width: 2px; }
 
 header {
   min-height: 300px;
@@ -10,10 +19,13 @@ header {
   border-bottom-right-radius: 49% 50%;
   color: #fff; }
   header .header-wrap {
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 960px;
+    font-family: "Hind", sans-serif;
+    width: 1160px;
     margin: auto;
     padding-bottom: 50px; }
+    header .header-wrap .header_heading::selection {
+      color: white;
+      background: #fa3e25; }
     header .header-wrap .landing-logo {
       display: flex;
       align-items: center; }
@@ -28,15 +40,15 @@ header {
       font-size: 20px;
       white-space: pre-line;
       padding-bottom: 50px; }
-  header .header_button {
-    color: #fff;
-    width: 165px;
-    height: 55px;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5%;
-    background-color: orange; }
+    header .header-wrap .header_button {
+      width: 165px;
+      height: 55px;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      border-radius: 5%;
+      background: orange;
+      color: #fff; }
   header .login {
     padding-left: 175px;
     font-size: 20px;
@@ -44,6 +56,9 @@ header {
     padding-top: 200px;
     color: #ccc; }
 
+.section_text::selection {
+  color: white;
+  background: #f7166c; }
 .section_text {
   color: #fff;
   text-align: center;
@@ -57,7 +72,7 @@ header {
   margin: auto;
   padding-bottom: 50px; }
   .section_card_wrap .section_card {
-    background-color: #707070;
+    background-color: #3f3d42;
     display: flex;
     margin: 15px;
     padding: 10px; }
@@ -80,10 +95,13 @@ header {
   color: #fff;
   top: 40px;
   display: flex;
-  background: linear-gradient(to right, #ffb30f, #9216b1);
+  background: linear-gradient(to right, #ffde25, #bd375f);
   width: 900px;
   margin: auto;
   justify-content: space-between; }
+  .section_banner_heading::selection {
+    color: white;
+    background: #f7166c; }
   .section_banner_text_wrap {
     padding-left: 80px; }
     .section_banner_text_wrap .section_banner_heading:nth-child(1) {
@@ -100,16 +118,17 @@ header {
 
 .footer {
   top: 10px;
-  background: #707070;
+  background: #3f3d42;
   color: #fff; }
   .footer-wrap {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 70px;
-    width: 960px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 1160px;
     margin: auto; }
-    .footer-wrap_logo {
+    .footer-wrap .footer_logo.landing-logo {
       display: flex;
       align-items: center; }
     .footer-wrap p span {

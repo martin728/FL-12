@@ -1,7 +1,47 @@
-
 body{
-    background-color:$main_background ;
+    margin: 0;
+    background-color:$main_background;
 }
+
+
+@mixin header-btn-property {
+    width: 165px;
+    height: 55px;
+    font-size:20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5%;
+    background: $btn-bg;
+    color: $general_text-color;
+}
+@mixin bunner-btn-property {
+    align-self: center;
+    color:$general_text-color;
+    height: 30px;
+    width: 100px;
+    margin-right: 80px;
+    border: none;
+    border-radius:5%;
+    background: $btn-bg;
+}
+@mixin links{
+    color:$general_text-color;
+}
+a{
+    @include links;
+}
+.error{
+    background-color: #fff;
+    &--serious{
+        @extend .error;
+        border-width:2px ;
+    }
+}
+$primary-colors: (
+    "red":   "#ff0000",
+    "green": "#00ff00",
+    "blue":  "#0000ff"
+);
 header{
     min-height: 300px;
     background-image: $background;
@@ -11,10 +51,14 @@ header{
     border-bottom-right-radius: 49% 50%;
     color: $header_text-color;
     .header-wrap{
-        font-family: 'Source Sans Pro', sans-serif;
-        width: 960px;
+        font-family:$font-header-wrap;
+        width: 1160px;
         margin: auto;
         padding-bottom: 50px;
+        .header_heading::selection {
+            color: rgb(255, 255, 255);
+            background:$text_overlay;
+        }
         .landing-logo{
             display: flex;
             align-items: center;
@@ -27,23 +71,15 @@ header{
             font-weight: 700;
             width: 49%;
             font-size:70px;
-
         }
         .header_text{
             font-size: 20px;
             white-space: pre-line;
             padding-bottom:50px ;
         }
-    }
-    .header_button{
-        color: #fff;
-        width: 165px;
-        height: 55px;
-        font-size:20px;
-        font-weight: 600;
-        border: none;
-        border-radius: 5%;
-        background-color: $button-background;
+        .header_button{
+            @include header-btn-property;
+        }
     }
     .login{
         padding-left: 175px;
@@ -54,14 +90,17 @@ header{
     }
 }
 
+
 .section{
+    &_text::selection {
+        color: rgb(255, 255, 255);
+        background: rgb(247, 22, 108);}
     &_text{
         color: $header_text-color;
         text-align: center;
         font-size: 35px;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
-
     }
     &_card_wrap{
         display: flex;
@@ -104,6 +143,10 @@ header{
     width: 900px;
     margin: auto;
     justify-content: space-between;
+    &_heading::selection {
+        color: rgb(255, 255, 255);
+        background: rgb(247, 22, 108);
+    }
     &_text_wrap{
         padding-left: 80px;
         .section_banner_heading:nth-child(1){
@@ -111,14 +154,7 @@ header{
         }
     }
     &_button{
-        align-self: center;
-        color: #fff;
-        height: 30px;
-        width: 100px;
-        margin-right: 80px;
-        border: none;
-        border-radius:5%;
-        background: $button-background;
+        @include bunner-btn-property;
     }
 }
 .footer{
@@ -127,15 +163,16 @@ header{
     color: $general_text-color;
     &-wrap{
         display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        padding:70px;
-        width: 960px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top:70px;
+        padding-bottom: 70px;
+        width: 1160px;
         margin: auto;
-        &_logo{
-                display: flex;
-                align-items: center;
-            }
+        .footer_logo.landing-logo{
+            display: flex;
+            align-items: center;
+        }
         p span{
                 display: block;
             }
@@ -145,4 +182,5 @@ header{
         .footer_text{
             width: 315px;
         }
-    }}
+    }
+}
