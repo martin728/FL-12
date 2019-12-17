@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 900px;
+    margin:auto;
+}
+button{
+    width: 150px;
+    border-radius: 20px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid rgba(121, 121, 121, 0.787);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background: none;
+    color: #bfba55;
+}
+.nav_bar{
+    color: black;
+    display: flex;
+    position: fixed;
+    background:#fff ;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    word-spacing: 30px;
+    font-size: 20px;
+}
+.header-section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background: url(../img/home-bg.jpg), rgba(0, 0, 0, 0.664);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 800px;
+    width: 1400px;
+    min-width: 900px;
+}
+.hello-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello-page h1{
+    color: white;
+    font-size: 50px;
+}
+.hello-page h6{
+    color: #bfba55;
+    font-size: 10px;
+}
+
+.description-post{
+    padding-top: 100px;
+
+}
+.post-info{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 900px;
+}
+.author{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
