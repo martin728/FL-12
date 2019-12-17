@@ -117,14 +117,13 @@ footer{
     width: 1400px;
     margin: auto;
     background: #000;
+    min-height: 200px;
 }
 .footer-info{
     display: flex;
     justify-content: space-between;
     margin: auto;
     color: #777;
-    background-color: #000;
-    min-height: 200px;
     width: 900px;
     min-width: 900px;
 }
