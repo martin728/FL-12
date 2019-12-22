@@ -1,7 +1,3 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
 :root {
   --bg-color--dark: #0b192f;
   --bg-color--header: #024161;
@@ -9,123 +5,130 @@
   --link--hover: #1f52a4;
   --bg-footer-color: #024161;
 }
-body {
-  font-family: roboto;
-  background-color: #0b192f;
-}
-.content-post1 {
-  background: #9d27b0;
-  color: white;
-}
-.content-post2 {
-  background: #9bb800;
-  color: white;
-}
-.content-post3 {
-  background: #ed5120;
-  color: white;
-}
-.content-post4 {
-  background: #9d27b0;
-  color: white;
-}
-.content-post5 {
-  background: #2d95bb;
-  color: white;
-}
-
-/* Your styles go here */
 *{
   margin: 0;
 }
-.content{
-  width: 100%;
-  max-width: 480px;
+body{
+  margin:0px 5px 0px;
+  background: #0b192f;
+  color: #fff;
 }
-.photopost{
- width: 100%;
+.container{
+  margin: auto;
+  padding: 0px 41px 0px 29px;
 }
 .header{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 20px;
-  background: #1f52a4;
+  background:#024161;
+  width: 100%;
 }
 .sandwich{
-  width: 35px;
+  width: 25px;
   height: 2px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.753);
   margin:2px 0;
-  align-self: center;
 }
 .sandwich-menu{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin:50px 0px 100px;
-  width: 100%;
-}
-.nav-bar{
-  padding-bottom: 50px;
-  margin-bottom: 40px;
+  align-items: center;
+  padding:30px;
 }
 .nav-bar p{
-  display: flex;
-  justify-content: center;
-  color: white;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
   font-size: 40px;
-  font-weight: lighter;
 }
 .nav-bar span{
-  color: brown;
+  color: rgb(150, 46, 46);
 }
-/*  */
-
-.header-image{
-  width: 100%;
-  background-image: url(../img/post0.jpg);
+.header_image{
+  background-image:url(../img/post0.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin: 0px 0px 20px;
-  padding: 50pxpx 20px 50px;
+  background-size: cover;
 }
-.header-image-text{
+.header_image-text{
+  margin: 15px 0px 15px 0px;
+  width: 99%;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 100%;
-  min-height:300px;
-  width: 85%;
-  padding: 0px 40px 40px;
 }
- h1{
+.header_image-text h1{
+  font-weight: lighter;
+  font-size: 44px;
+  line-height: 44px;
+}
+.header_image-text p{
+  line-height: 25px;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+.photopost{
+  width: 100%;
+}
+.content_post1{
+  background: #9d27b0;
+}
+.content_post2 {
+  background: #9bb800;
+}
+.content_post3 {
+background: #ed5120;
+}
+.content_post4 {
+background: #9d27b0;
+}
+.content_post5 {
+background: #2d95bb;
+}
+.content_description_post h1{
   font-size: 40px;
   font-weight: lighter;
-  color: white;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
- p{
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.575);
+.content_description_post p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+  padding: 25px 0px 25px 0px;
 }
-/*  */
-
-.photo-post img{
-  max-width: 480px;
+.content_description_news{
+  background: #fff;
+  color: rgb(5, 5, 43);
+  background: #fff;
+  color: rgb(5, 5, 43);
+  line-height: 15px;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-bottom: 20px;
 }
-.description-post_content{
-  padding: 6%;
-  width: 315px;
+.content_description_news h1{
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 20px;
+  color: rgb(5, 5, 43);
 }
-.photopost:hover{
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-height: 100%;
-width: 100%;
-opacity: 0.5;
-transition: .3s ease;
+.content_description_news p{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: lighter;
+  padding: 25px 0px 25px 0px;
+  color: rgb(5, 5, 43);
+}
+/* ---------------------------------------------------------------------------------------------- */
+.footer{
+  background:#024161;
+  color: rgb(88, 90, 92);
+  width: 100%;
+}
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
 }
